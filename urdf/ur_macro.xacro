@@ -334,7 +334,7 @@
     <!-- Custom gripper -->
     <link name="${tf_prefix}gripper_link">
       <visual>
-        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <origin xyz="0.15 0 0" rpy="0 0 0"/>
         <geometry>
           <box size="0.3 0.4 0.2"/>
         </geometry>
@@ -342,7 +342,7 @@
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <box size="0.3 0.4 0.2"/>
+          <box size="0.15 0.4 0.2"/>
         </geometry>
       </collision>
     </link>
@@ -487,7 +487,7 @@
     <joint name="${tf_prefix}flange-gripper" type="fixed">
       <parent link="${tf_prefix}flange" />
       <child link="${tf_prefix}gripper_link" />
-      <origin xyz="0.5 0 0" rpy="0 0 0"/>
+      <origin xyz="0.0 0 0" rpy="0 0 0"/>
     </joint>
 
 
